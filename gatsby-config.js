@@ -6,5 +6,5 @@
 
 module.exports = {
   /* Plugin used in gatsby here */
-  plugins: ["gatsby-plugin-postcss"],
+  plugins: ["gatsby-plugin-postcss", "gatsby-plugin-offline"],
 }
