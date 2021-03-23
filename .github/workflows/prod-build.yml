@@ -24,13 +24,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build
-        run: npm run build
-
       - name: prod-deploy
         run: |
           git config --global user.name $user_name
           git config --global user.email $user_email
+          npm run build
           echo "iamdavidabayomi.me" >> ./public/CNAME
           npm run deploy
         env:
