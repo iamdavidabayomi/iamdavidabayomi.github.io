@@ -24,13 +24,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build prod-deploy
+      - name: Build
         run: npm run build
 
-      - name: create CNAME
+      - name: Create CNAME
         run: echo "iamdavidabayomi.me" >> ./public/CNAME
 
-      - name: prod-deploy
+      - name: Deploy
         run: |
           git config --global user.name iamdavidabayomi
           git config --global user.email iamdavidabayomi@gmail.com
