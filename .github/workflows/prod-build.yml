@@ -24,15 +24,18 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Build prod-deploy
+        run: npm run build
+
+      - name: create CNAME
+        run: echo "iamdavidabayomi.me" >> ./public/CNAME
+
       - name: prod-deploy
         run: |
-          git config --global user.name $user_name
-          git config --global user.email $user_email
-          npm run build
-          echo "iamdavidabayomi.me" >> ./public/CNAME
+          git config --global user.name iamdavidabayomi
+          git config --global user.email iamdavidabayomi@gmail.com
+          git remote set-url origin https://${github_token}@github.com/${repository}
           npm run deploy
         env:
-          user_name: "iamdavidabayomi"
-          user_email: "iamdavidabayomi@gmail.com"
           github_token: ${{ secrets.DEPLOY_ACCESS_TOKEN }}
           repository: ${{ github.repository }}
