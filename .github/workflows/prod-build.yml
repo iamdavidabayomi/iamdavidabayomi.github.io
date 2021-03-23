@@ -1,0 +1,45 @@
+name: prodiution-build
+on:
+  push:
+    branches:
+      - "source"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: prod-deploy
+        run: |
+          git config --global user.name $user_name
+          git config --global user.email $user_email
+          npm run build
+          echo "iamdavidabayomi.me" >> ./public/CNAME
+          cd ./public
+          git init
+          git remote set-url origin https://${github_token}@github.com/${repository}
+          git add .
+          git commit -m "production"
+          git push -u origin main
+        env:
+          user_name: "iamdavidabayomi"
+          user_email: "iamdavidabayomi@gmail.com"
+          github_token: ${{ secrets.DEPLOY_ACCESS_TOKEN }}
+          repository: ${{ github.repository }}
