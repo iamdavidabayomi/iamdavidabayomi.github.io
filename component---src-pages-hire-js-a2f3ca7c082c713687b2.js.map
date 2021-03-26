@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/hire.js"],"names":["hire"],"mappings":"2FAAA,gCAMeA,UAJF,WACX,OAAO","file":"component---src-pages-hire-js-a2f3ca7c082c713687b2.js","sourcesContent":["import React from \"react\"\n\nconst hire = () => {\n  return <div></div>\n}\n\nexport default hire\n"],"sourceRoot":""}

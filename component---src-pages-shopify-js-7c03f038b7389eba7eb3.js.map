@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/shopify.js"],"names":["shopify"],"mappings":"2FAAA,gCAMeA,UAJC,WACd,OAAO","file":"component---src-pages-shopify-js-7c03f038b7389eba7eb3.js","sourcesContent":["import React from \"react\"\n\nconst shopify = () => {\n  return <div></div>\n}\n\nexport default shopify\n"],"sourceRoot":""}

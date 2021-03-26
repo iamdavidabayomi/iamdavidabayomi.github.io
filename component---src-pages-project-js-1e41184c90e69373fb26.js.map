@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/project.js"],"names":["project"],"mappings":"2FAAA,gCAMeA,UAJC,WACd,OAAO","file":"component---src-pages-project-js-1e41184c90e69373fb26.js","sourcesContent":["import React from \"react\"\n\nconst project = () => {\n  return <div></div>\n}\n\nexport default project\n"],"sourceRoot":""}
