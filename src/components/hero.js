@@ -3,7 +3,10 @@ import React from "react"
 const hero = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center text-center bg-blueGray-700 h-screen w-full">
+      <div
+        className="flex flex-col justify-center items-center text-center bg-blueGray-700"
+        style={{ height: "calc(100vh - 90px)" }}
+      >
         <div className=" text-xl md:text-5xl text-white font-mono underline font-bold">
           iamdavidabayomi
         </div>

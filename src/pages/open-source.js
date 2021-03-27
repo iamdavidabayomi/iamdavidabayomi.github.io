@@ -4,7 +4,7 @@ import Header from "../components/header"
 import Hero from "../components/hero"
 import Footer from "../components/footer"
 
-const contact = () => {
+const openSource = () => {
   return (
     <>
       <Layout>
@@ -16,4 +16,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default openSource

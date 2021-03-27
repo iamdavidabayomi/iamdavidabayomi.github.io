@@ -10,6 +10,7 @@ export default function HomePage() {
       <Layout>
         <Header />
         <Hero />
+        <Footer />
       </Layout>
     </>
   )

@@ -3,7 +3,7 @@ import React from "react"
 const Icon = () => {
   return (
     <>
-      <button class="align-middle outline-none">
+      <button class="align-middle outline-none hover:outline-none focus:outline-none">
         <svg
           role="img"
           fill="current-color"
@@ -22,7 +22,7 @@ const Icon = () => {
 const Github = () => {
   return (
     <>
-      <div>
+      <div className="mr-4 md:mr-0 md:order-last">
         <a
           href="https://github.com/iamdavidabayomi"
           className="flex items-center bg-gray-900 ml-1 font-bold px-0.5 py-0.5 md:px-1.5 md:py-1.5 rounded-full md:rounded-2xl outline-none focus:outline-none   active:bg-blueGray-600 uppercase text-sm shadow-xl hover:shadow-lg"
