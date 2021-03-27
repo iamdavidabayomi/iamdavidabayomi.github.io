@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/wordpress.js"],"names":["wordpress"],"mappings":"2FAAA,gCAMeA,UAJG,WAChB,OAAO","file":"component---src-pages-wordpress-js-cfad82a0ac332cfb8ee7.js","sourcesContent":["import React from \"react\"\n\nconst wordpress = () => {\n  return <div></div>\n}\n\nexport default wordpress\n"],"sourceRoot":""}

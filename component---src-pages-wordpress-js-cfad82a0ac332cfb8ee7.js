@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{NJbX:function(n,e,t){"use strict";t.r(e);var u=t("q1tI"),a=t.n(u);e.default=function(){return a.a.createElement("div",null)}}}]);
-//# sourceMappingURL=component---src-pages-wordpress-js-cfad82a0ac332cfb8ee7.js.map
